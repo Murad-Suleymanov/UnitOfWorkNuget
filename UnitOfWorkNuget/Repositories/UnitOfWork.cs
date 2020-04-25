@@ -58,5 +58,10 @@ namespace UnitOfWorkNuget.Repositories
 
             return repo;
         }
+
+        public void Commit()
+        {
+            dbContext.SaveChanges();
+        }
     }
 }

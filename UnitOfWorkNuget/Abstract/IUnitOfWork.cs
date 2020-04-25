@@ -22,9 +22,14 @@ namespace UnitOfWorkNuget.Abstract
         IRepository<TEntity> Repository<TEntity>() where TEntity : class;
 
         /// <summary>
-        /// Commit transaction
+        /// Commit transaction async
         /// </summary>
         /// <returns></returns>
         Task CommitAsync();
+
+        /// <summary>
+        /// Commit transaction
+        /// </summary>
+        void Commit();
     }
 }
